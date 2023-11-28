@@ -1,0 +1,115 @@
+.hidden {
+  visibility: hidden;
+}
+
+.showing {
+  visibility: visible;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(7, 6, 95, 1) 0%,
+    rgba(49, 49, 226, 1) 43%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+h2 {
+  color: red;
+  text-align: center;
+}
+
+h3 {
+  color: red;
+  text-align: center;
+}
+
+#start-div {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#word-form-div {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#reset-form {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#player-timer {
+  text-align: center;
+}
+
+#player-score {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#result {
+  text-align: center;
+}
+
+#word-list {
+  text-align: center;
+}
+
+li {
+  text-decoration: none;
+  color: green;
+  background-color: white;
+  border: solid;
+  border-color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.outOfTime {
+  color: red;
+}
+
+#score-num {
+  color: green;
+}
+
+.labelText {
+  color: green;
+}
+
+.correct {
+  background-color: green;
+}
+
+.incorrect {
+  background-color: yellow;
+}
+
+.notAWord {
+  background-color: red;
+}
+
+ul {
+  list-style: none;
+}
+
+td {
+  border: solid;
+  border-color: lightblue;
+  padding: 15px;
+  color: blue;
+  background-color: white;
+}

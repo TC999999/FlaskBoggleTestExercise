@@ -1,0 +1,55 @@
+{%extends "base.html"%}{%block content%}
+<h1><i>BOGGLE!</i></h1>
+<h2>You have played {{session["count"]}} times</h2>
+<h3>Your high score is {{session["player_high_score"]}}</h3>
+<div id="start-div">
+  <button id="start">Start Game</button>
+</div>
+
+<div id="word-form-div" class="hidden">
+  <form id="wordForm" action="">
+    <div>
+      <label for="word" class="labelText">Type any word you see</label>
+      <input
+        type="text"
+        name="word"
+        id="new-word"
+        placeholder="type your word"
+        required="required"
+      />
+      <button class="submit-word">Submit Word</button>
+    </div>
+  </form>
+</div>
+
+<div id="reset-form" class="hidden">
+  <form action="/reset"><button id="reset">Reset</button></form>
+</div>
+
+<div id="player-timer" class="hidden">
+  <span id="time-label">Time Left: </span><span id="time-left"></span>
+</div>
+
+<div id="player-score" class="hidden">
+  <span id="score-label">Your Score: </span><span id="score-num"></span>
+</div>
+
+<div id="boggle-board" class="hidden">
+  <table class="center">
+    {%for row in session["board"]%}
+    <tr>
+      {%for letter in row%}
+      <td>{{letter}}</td>
+      {%endfor%}
+    </tr>
+    {%endfor%}
+  </table>
+</div>
+
+<div id="result"></div>
+<br />
+<div>
+  <ul id="word-list"></ul>
+</div>
+
+{%endblock%}
